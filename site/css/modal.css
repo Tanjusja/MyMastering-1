@@ -31,9 +31,11 @@
 
       #login .modal_window {
         height: 700px;
+        margin-top: 3%;
       }
       #signup .modal_window {
         height: 850px;
+        margin-top: 3%;
       }
 
       .modal_window .close {
