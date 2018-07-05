@@ -184,6 +184,9 @@ textarea {
   position: relative;
   padding: 20px;
 }
+.center {
+  text-align: center;
+}
 
 /* Header */
 .container-header { 
@@ -319,7 +322,7 @@ form input {
       input[type="checkbox"] {
           color: #2f2e2e;
           background: #fff;
-          margin: 0;
+          margin: 0 0 40px 0;
           margin-right: 10px;
           height: 15px;
           width: 15px;
@@ -349,10 +352,34 @@ form input {
       :focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
       @media (max-width: 480px) {
+        form input {
+          font-size: 16px;
+          margin: 0 0 20px 0;
+        }
         input[type="text"],input[type="password"],input[type="email"],input[type="file"], .upload { 
           width: 100%;
         }
       }
+
+input[type="radio"]:checked {
+    border: 5px solid #767875;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #767875;
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,.15);
+    transition: 0.2s all linear;
+    cursor: pointer;
+    outline: none;
+
+    margin-right: 10px;
+}
 
 /* Registration */
 .sign-up {
@@ -379,7 +406,7 @@ form input {
     padding: 40px 20px 20px 40px;
 }
 .sign-up form {
-    padding: 10px 40px 80px;
+    padding: 20px 40px;
 }
 .sign-up h2 {
     font-size: 26px;
@@ -418,7 +445,7 @@ form input {
 /* Change Profile */
 .change-profile {
     position: relative;
-    padding: 120px 20px 70px 20px;
+    padding: 100px 40px 40px;
     background:  url(../img/pattern-min.png) no-repeat center;
     background-size: cover;
 }
@@ -427,7 +454,6 @@ form input {
     font-weight: 600;
     color: #427a5b;
     padding-bottom: 30px;
-    padding-right: 10px;
 }
 .change-profile p {
     font-size: 24px;
@@ -523,7 +549,11 @@ form input {
     width: 1200px;
   }
 }
-
+/*
+.col-2 {
+  width: 50%;
+}
+*/
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     position: relative;
     margin: 0 auto;
